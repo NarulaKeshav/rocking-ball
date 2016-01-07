@@ -11,6 +11,21 @@ So I present it to you, my Chucky and Cheeze (They actually rock):
 `@keyframes` in CSS lets you animate HTML elements. In order to rock the balls, I used `@keyframes` at `45%`, `50%`, `55%` and `90%` by changing transform property. At `50%` and `95%`, I rotated the eyes at `x-axis` in order to make the eyes blink. Something like this:
 
 ```
+// DIV TAG WITH CLASS EYES THAT I'M GOING TO TARGET
+<div class="left-eye"></div>
+<div class="right-eye"></div>
+
+// ADDING PROPERTIES WITH CSS
+.left-eye, .right-eye {
+  background: rgba(0,0,0,0.6);
+  height: 45px;
+  width: 35px;
+  border-radius: 100%;
+  position: absolute;
+  animation: blink 4s ease-in-out infinite;
+}
+
+// CREATING THE BLINK ANIMATION
 @-webkit-keyframes blink {
   45% { -webkit-transform: none; }
   50% { -webkit-transform: rotateX(90deg); }
