@@ -1,7 +1,9 @@
 # Rocking Ball
 Inspired by [Smile on CodePen](http://codepen.io/rockteam/details/dGvdyx#stats), I wanted to learn how `@keyframes` worked in CSS. So I wanted to give it a shot. 
 
-So I present it to you, my Chucky and Cheeze:
+So I present it to you, my Chucky and Cheeze (They actually rock):
+
+[View Chucky and Cheeze](http://narulakeshav.github.io/rocking-ball/)
 
 ![Screenshot](http://goo.gl/UaGU6Z)
 
