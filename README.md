@@ -17,6 +17,7 @@ I gave the class to the div tag that I'm going to target with CSS
 ```
 
 Adding properties and animation property to the classes
+```
 .left-eye, .right-eye {
   background: rgba(0,0,0,0.6);
   height: 45px;
