@@ -12,11 +12,21 @@ So I present it to you, my Chucky and Cheeze (They actually rock):
 
 ```
 @-webkit-keyframes blink {
-  45% { -webkit-transform: none; }
-  50% { -webkit-transform: rotateX(90deg); }
-  55% { -webkit-transform: none; }
-  90% { -webkit-transform: none; }
-  95% { -webkit-transform: rotateX(90deg); }
+  45% {
+    -webkit-transform: none;
+  }
+  50% {
+    -webkit-transform: rotateX(90deg);
+  }
+  55% {
+    -webkit-transform: none;
+  }
+  90% {
+    -webkit-transform: none;
+  }
+  95% {
+    -webkit-transform: rotateX(90deg);
+  }
 }
 ```
 
