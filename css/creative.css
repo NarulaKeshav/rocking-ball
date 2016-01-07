@@ -1,5 +1,151 @@
 body {
+  background: radial-gradient(circle, #F8EEB9, #E8D679);
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+h1 {
   font-family: Roboto;
-  padding-top: 8em;
-  background: radial-gradient(circle, #EEE, #AAA);
+  color: rgba(0,0,0,0.4);
+}
+
+/* OUTER LAYER CSS */
+.outer-layer {
+  vertical-align: center;
+  text-align: center;
+  margin: 0 auto 0;
+  padding: 0;
+  padding-top: 17%;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  align-items: center;
+}
+
+/* INNER LAYER CSS */
+.inner-layer {
+  margin: 0;
+  position: relative;
+}
+
+/* BALL CSS */
+.ball,
+.ball-bill {
+  background: #FF6347;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  box-shadow: inset -10px -50px 1px -20px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 10;
+  animation: smile 4s ease-in-out infinite;
+}
+
+/* BALL SHADOW CSS */
+.ball-shadow,
+.ball-shadow-bill {
+  background: rgba(0,0,0,0.1);
+  height: 30px;
+  width: 70%;
+  border-radius: 100%;
+  margin: -20px 0px 0px 80px;
+  position: relative;
+  z-index: 1;
+}
+
+/* LEFT AND RIGHT EYES */
+.left-eye,
+.right-eye {
+  background: rgba(0,0,0,0.6);
+  height: 45px;
+  width: 35px;
+  border-radius: 100%;
+  position: absolute;
+}
+.left-eye-bill,
+.right-eye-bill {
+  background: rgba(0,0,0,0.6);
+  height: 2px;
+  width: 30px;
+  position: absolute;
+  animation: blink 4s ease-in-out infinite;
+}
+.left-eye,
+.left-eye-bill {
+  left: 80px;
+  top: 65px;
+  animation: blink 4s ease-in-out infinite;
+}
+.right-eye,
+.right-eye-bill {
+  right: 80px;
+  top: 65px;
+}
+
+/* INNER EYES */
+.inner-eye {
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  background: #FFF;
+  position: absolute;
+  top: 4px;
+  margin-left: 7px;
+}
+
+/* MOUTH CSS */
+.ball-smile,
+.ball-smile-bill {
+  border: 4px solid rgba(0,0,0,0.1);
+  display: inline-block;
+  min-width: 10em;
+  min-height: 5em;
+  border-radius: 50%;
+  -webkit-border-radius: 0 0 90px 90px;
+  background: red;
+  position: absolute;
+  box-shadow: inset -15px -20px 1px -10px rgba(0,0,0,0.1);
+  top: 160px;
+  left: 80px;
+}
+.ball-bill {
+  background: #29ABDA;
+}
+.ball-smile-bill {
+  background: rgba(0,0,0,0.1);
+}
+
+/* KEYFRAME CSS TO MAKE BALL ROCK */
+@-webkit-keyframes smile {
+  0% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+/* MAKE THE EYES BLINK */
+@-webkit-keyframes blink {
+  45% {
+    -webkit-transform: none;
+  }
+  50% {
+    -webkit-transform: rotateX(90deg);
+  }
+  55% {
+    -webkit-transform: none;
+  }
+  90% {
+    -webkit-transform: none;
+  }
+  95% {
+    -webkit-transform: rotateX(90deg);
+  }
 }
